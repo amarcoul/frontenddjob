@@ -1,0 +1,72 @@
+/* Formulaire */
+.create-main h1 {
+    font-size: 1.875rem;
+    color: #374151;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .create-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .create-input-text, .create-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Zone de dépôt d'image */
+  .create-border-p4 {
+    background-color: #F9FAFB;
+    border: 2px dashed #E5E7EB;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .create-label-fileUpload {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6B7280;
+    cursor: pointer;
+  }
+  .create-border-p4 img {
+    max-width: 200px; /* Ajuste selon la taille souhaitée */
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  
+  /* Éditeur de texte */
+  .create-textarea {
+    min-height: 200px;
+    resize: vertical;
+  }
+  
+  /* Bouton de publication */
+  .create-button {
+    background-color: #4F46E5;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+  }
+  
+  .create-button:hover {
+    background-color: #4338CA;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .create-max-w-3xl {
+      max-width: 48rem;
+    }
+  }

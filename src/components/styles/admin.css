@@ -1,0 +1,135 @@
+/* Layout général */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Main content */
+  .admin-main {
+    padding: 2rem 0;
+  }
+  
+  /* Liste des articles */
+  .articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Carte d'article */
+  .article-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+  }
+  
+  .article-card:hover {
+    border-color: #d1d5db;
+    background-color: #f9fafb;
+  }
+  
+  /* Conteneur du contenu de l'article */
+  .article-content-wrapper {
+    flex: 1;
+  }
+  
+  /* Titre d'article */
+  .article-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Date de l'article */
+  .article-date {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  /* Conteneur des boutons */
+  .article-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  /* Boutons d'action */
+  .action-button {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    background: none;
+    color: #6b7280;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .action-button:hover {
+    color: #111827;
+  }
+  
+  .delete-button:hover {
+    color: #dc2626;
+  }
+  
+  .edit-button:hover {
+    color: #2563eb;
+  }
+  
+  /* Style pour l'image */
+  .article-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-left: 1rem;
+  }
+  /* Styles for the theme search section */
+.bg-gray-50 .space-y-2 .flex button svg {
+  /* Change the SVG icon to a circular background with magnifying glass */
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 5px;
+  width: 32px;
+  height: 32px;
+}
+
+.bg-gray-50 .space-y-2 .flex button {
+  /* Remove default button styles */
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Style for active category */
+.bg-gray-50 .space-y-2 .flex.bg-white button svg {
+  /* Active state - green background with white icon */
+  background-color: blue;
+  color: white;
+}
+
+/* Ensure the SVG paths are visible */
+.bg-gray-50 .space-y-2 .flex button svg path {
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Make the active search icon white */
+.bg-gray-50 .space-y-2 .flex.bg-white button svg path {
+  stroke: white;
+}

@@ -1,0 +1,122 @@
+/* src/components/Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.login-card {
+    width: 380px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.logo-circle {
+    width: 24px;
+    height: 24px;
+    background-color: #4b4bf7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px; /* Ajout d'un espacement entre le cercle et le texte */
+}
+
+.logo-text {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.brand-name {
+    font-size: 16px;
+    color: #111;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login-title {
+    text-align: left;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    color: #111;
+    font-weight: 600;
+}
+
+.login-subtitle {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4b4bf7;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4b4bf7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #4040d4;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+/* Suppression des marges par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
